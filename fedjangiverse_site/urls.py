@@ -14,9 +14,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path
+from . import views
+from fedj_webfinger.views import webfinger_index
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("", views.index, name="index"),
+    path("webfinger", webfinger_index, name="webfinger"),
+    path("admin/", admin.site.urls),
 ]

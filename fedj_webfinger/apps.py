@@ -1,6 +1,5 @@
 from django.apps import AppConfig
 
-
-class FedjangiverseConfig(AppConfig):
+class FedjWebfingerConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "fedjangiverse"
+    name = "fedj_webfinger"
