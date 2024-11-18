@@ -10,3 +10,7 @@ version = "0.0.1"
 dependencies = [
     "django>=4"
 ]
+
+[project.urls]
+Homepage = "https://github.com/jakekara/fedjangiverse/"
+Issues = "https://github.com/jakekara/fedjangiverse/issues"
