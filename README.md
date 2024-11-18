@@ -25,7 +25,14 @@ This will install Django and all of the apps from
 this repo in editable mode, so changes will be reflected
 right away.
 
-Add a super user
+Run migrations
+
+```shell
+python manage.py migrate
+```
+
+Add a super user so you can get into the admin panel:
+
 ```shell
 python manage.py createsuperuser
 ```
