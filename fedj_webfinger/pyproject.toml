@@ -1,3 +1,12 @@
+[builld-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
 [project]
 name = "fedj-webfinger"
 version = "0.0.1"
+
+dependencies = [
+    "django>=4"
+]
