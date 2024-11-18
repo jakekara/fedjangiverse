@@ -5,3 +5,5 @@
 *.pyc
 db.sqlite3
 .vscode
+**/build/**
+**egg-info
