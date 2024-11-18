@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Subject, Alias, Link, Property, LinkTitle
+from .models import LinkProperty, Subject, Alias, Link, Property, LinkTitle
 
 class AliasInline(admin.TabularInline):
     model = Alias
@@ -14,8 +14,12 @@ class LinkTitleInline(admin.StackedInline):
     model = LinkTitle
     extra = 1
 
+class LinkPropertyInline(admin.StackedInline):
+    model = LinkProperty
+    extra = 1
+
 class LinkAdmin(admin.ModelAdmin):
-    inlines = [LinkTitleInline]
+    inlines = [LinkTitleInline, LinkPropertyInline]
     model = Link
 
 class LinkInline(admin.StackedInline):

@@ -121,7 +121,7 @@ class LinkProperty(models.Model):
     """
 
     link = models.ForeignKey(Link, on_delete=models.CASCADE)
-    name = models.CharField(max_length=32, blank=False, null=False, default="und", help_text="must be a language code")
+    name = models.CharField(max_length=32, blank=False, null=False)
     value = models.CharField(max_length=512, blank=False, null=False)
 
     def save(self, *args, **kwargs):
