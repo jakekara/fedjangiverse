@@ -5,7 +5,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fedj-webfinger"
-version = "0.0.1"
+version = "0.0.3"
+readme = "README.md"
 
 dependencies = [
     "django>=4"
